@@ -11,11 +11,15 @@
     echo "<h1>Date and Time Manipulation</h1>";
     $datenow = getdate();
     echo "<p>Today's date is: </p>";
-    echo "<p>".$datenow['mday']."</p>";
-    echo "<p>".$datenow['mon']."</p>";
-    echo "<p>".$datenow['year']."</p>";
+    //echo "<p>".$datenow['mday']."</p>";
+    //echo "<p>".$datenow['mon']."</p>";
+    //echo "<p>".$datenow['year']."</p>";
 
     echo "<p>Today's date is: ".$datenow['year']."-".$datenow['mon']."-".$datenow['mday']."</p>";
+
+    echo "<p>Current time: </p>";
+
+    print date("yy/m/d G:i:s<br/>", time())."<br/>";
 ?>
 <?php include "footer.php";?>
 </body>
