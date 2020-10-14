@@ -1,5 +1,5 @@
 <?php
-echo "<h2>Navigation Bar</h2>
+echo "<h2>Welcome to PHP Primer</h2>
     <ul>
     <li><a href='index.php'>Index</a></li>
     <li><a href='ifstatement.php'>Simple If Statement</a></li>
