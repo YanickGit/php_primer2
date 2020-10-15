@@ -33,8 +33,7 @@
             echo "<h2 style='color: red'>YOU HAVE FAILED</h2>";
          }
          echo "<h2>Grade: $gradeN</h2>";
-        
-         echo "<hr>";
+    
         }
     ?>
 
