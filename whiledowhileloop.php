@@ -36,9 +36,15 @@
             //echo "<p>I AM LESS THAN 10!</p>";
             //} 
         //Pre-Condition Loop   
-            while ($loopW <= $loopQW) {
-                echo "<p>I AM LESS THAN $loopQW.</p>";
-                $loopW++;
+            //while ($loopW <= $loopQW) {
+              //  echo "<p>I AM LESS THAN $loopQW.</p>";
+                //$loopW++;
+            //}
+            echo "<p>Exit While Loop!</p>";
+
+            while ( $loopQW <= $loopW) {
+                echo "<p>I AM LESS THAN $loopW.</p>";
+                $loopQW++;
             }
             echo "<p>Exit While Loop!</p>";
         }
