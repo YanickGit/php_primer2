@@ -22,7 +22,7 @@
     <?php 
     //declaring variables
     $name = "Yanick Levy";
-    $age = "30";
+    $age = "1000";
 
     echo $name;
     echo "<h1>My name is $name .</h1>";
