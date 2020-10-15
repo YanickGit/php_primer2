@@ -9,9 +9,22 @@
 <?php require "header.php";?>
     <?php
         echo "<h1>Switch Statement</h1>";
-        $grade = "x";
+        echo "<hr>";
 
-        switch ($grade) {
+        echo "<form method='post'>
+        Type your grade letter below (eg. A)<br>
+        to see your comments. <br>
+        <input type='text' id='gradeText' name='gradeText'><br>
+        <input type='submit' id='submitT' name='submitT'>
+        </form>";
+
+        $gradeText = 'F';
+        if(isset($_REQUEST['submitT'])){
+        $gradeText = $_REQUEST['gradeText'];
+
+        $gradeT = $gradeText;
+
+        switch ($gradeT) {
             case "A":
                 echo "<h2 style='color: green'>YOU ARE A SUPERSTAR!!!!!</h2>";
                 break;
@@ -25,10 +38,8 @@
                 echo "<h2 style='color: red'>YOU HAVE FAILED!!!!!</h2>";
                 break;
         }
-        echo "<h2>Grade: $grade</h2>";
-
-
-
+        echo "<h2>Grade: $gradeT</h2>";
+    }
     ?>
 <?php include "footer.php";?>
 </body>
