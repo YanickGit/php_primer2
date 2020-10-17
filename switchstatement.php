@@ -1,46 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP Primer - Switch Statements</title>
-</head>
-<body>
-<?php require "header.php";?>
-    <?php
-        echo "<h1>Switch Statement</h1>";
-        echo "<hr>";
+<?php 
+    $title = "Switch Statement";
+    require "includes/header.php";
+?>
 
-        echo "<form method='post'>
-        Type your grade letter below (eg. A)<br>
-        to see your comments. <br>
-        <input type='text' id='gradeText' name='gradeText'><br>
-        <input type='submit' id='submitT' name='submitT'>
-        </form>";
+<?php
+    echo "<h1>$title</h1>";
+    echo "<hr/>";
 
-        $gradeText = 'F';
-        if(isset($_REQUEST['submitT'])){
+    echo "<form method='post'>
+    Type your grade letter below (eg. A)<br/>
+    to see your comments. <br/>
+    <input type='text' id='gradeText' name='gradeText'><br/>
+    <input type='submit' id='submitT' name='submitT'>
+    </form>";
+
+    $gradeText = 'F';
+    if(isset($_REQUEST['submitT'])){
         $gradeText = $_REQUEST['gradeText'];
 
         $gradeT = $gradeText;
 
-        switch ($gradeT) {
-            case "A":
-                echo "<h2 style='color: green'>YOU ARE A SUPERSTAR!!!!!</h2>";
-                break;
-            case "B":
-                echo "<h2 style='color: orange'>YOU DID WELL!!!!!</h2>";
-                break;
-            case "C":
-                echo "<h2 style='color: blue'>YOU DID GOOD!!!!!</h2>";
-                break;
-            default:
-                echo "<h2 style='color: red'>YOU HAVE FAILED!!!!!</h2>";
-                break;
+    switch ($gradeT) {
+        case "A":
+            echo "<h2 style='color: green'>YOU ARE A SUPERSTAR!!!!!</h2>";
+            break;
+        case "B":
+            echo "<h2 style='color: orange'>YOU DID WELL!!!!!</h2>";
+            break;
+        case "C":
+            echo "<h2 style='color: blue'>YOU DID GOOD!!!!!</h2>";
+            break;
+        default:
+            echo "<h2 style='color: red'>YOU HAVE FAILED!!!!!</h2>";
+            break;
         }
         echo "<h2>Grade: $gradeT</h2>";
     }
     ?>
-<?php include "footer.php";?>
-</body>
-</html>
+
+<?php include "includes/footer.php";?>

@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP Primer - Date and Time Manipulation</title>
-</head>
-<body>
-<?php require "header.php";?>
+<?php 
+    $title = "Date and Time Manipulation";
+    require "includes/header.php";
+?>
+
 <?php
-    echo "<h1>Date and Time Manipulation</h1>";
+    echo "<h1>$title</h1>";
     /*
     $datenow = getdate();
     echo "<p>Today's date is: </p>";
@@ -23,8 +19,8 @@
     print date("yy/m/d G:i:s", time())."<br/>";
     print date("j of F Y, \a\\t g.i a", time())."<br/>";
 
-//https://stackoverflow.com/questions/4755704/php-timezone-list
-*/
+    //https://stackoverflow.com/questions/4755704/php-timezone-list
+    */
 
     echo "<hr>";
     echo "<h3>Jamaica</h3>";
@@ -55,9 +51,6 @@
     date_default_timezone_set('Australia/Sydney');
     $sydney = date("yy/m/d, g:i a", time());
     echo "<p>The current date and time is: ".$sydney."</p>";
-
-
 ?>
-<?php include "footer.php";?>
-</body>
-</html>
+
+<?php include "includes/footer.php";?>
