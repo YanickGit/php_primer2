@@ -9,20 +9,22 @@
 <?php require "header.php";?>
 <?php
     echo "<h1>Date and Time Manipulation</h1>";
+    /*
     $datenow = getdate();
-    //echo "<p>Today's date is: </p>";
-    //echo "<p>".$datenow['mday']."</p>";
-    //echo "<p>".$datenow['mon']."</p>";
-    //echo "<p>".$datenow['year']."</p>";
+    echo "<p>Today's date is: </p>";
+    echo "<p>".$datenow['mday']."</p>";
+    echo "<p>".$datenow['mon']."</p>";
+    echo "<p>".$datenow['year']."</p>";
 
-    //echo "<p>Today's date is: ".$datenow['year']."-".$datenow['mon']."-".$datenow['mday']."</p>";
+    echo "<p>Today's date is: ".$datenow['year']."-".$datenow['mon']."-".$datenow['mday']."</p>";
 
-    //echo "<p>Current time: </p>";
+    echo "<p>Current time: </p>";
 
-    //print date("yy/m/d G:i:s", time())."<br/>";
-    //print date("j of F Y, \a\\t g.i a", time())."<br/>";
+    print date("yy/m/d G:i:s", time())."<br/>";
+    print date("j of F Y, \a\\t g.i a", time())."<br/>";
 
 //https://stackoverflow.com/questions/4755704/php-timezone-list
+*/
 
     echo "<hr>";
     echo "<h3>Jamaica</h3>";

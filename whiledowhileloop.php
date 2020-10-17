@@ -16,7 +16,7 @@
         <input type='number' id='loopQtyW' name='loopQtyW'><br><br>
 
         Type the loop ceiling below:(eg. 20)<br>
-        <input type='number' id='loopCeilingW' name='loopCeilingW'><br><br>
+        <input type='number' id='loopCeilingW' name='loopCeilingW'><br>
 
         <input type='submit' id='submitW' name='submitW'>
         </form>";
@@ -32,21 +32,23 @@
         $loopW = $loopCeilingW;
 
         //Infinite Loop   
-            //while ($grade < 10) {
-            //echo "<p>I AM LESS THAN 10!</p>";
-            //} 
+        /*
+            while ($grade < 10) {
+            echo "<p>I AM LESS THAN 10!</p>";
+            } 
         //Pre-Condition Loop   
-            //while ($loopW <= $loopQW) {
-              //  echo "<p>I AM LESS THAN $loopQW.</p>";
-                //$loopW++;
-            //}
+            while ($loopW <= $loopQW) {
+                echo "<p>I AM LESS THAN $loopQW.</p>";
+                $loopW++;
+            }
             echo "<p>Exit While Loop!</p>";
+        */
 
             while ( $loopQW <= $loopW) {
                 echo "<p>I AM LESS THAN $loopW.</p>";
                 $loopQW++;
             }
-            echo "<p>Exit While Loop!</p>";
+            echo "<p><=== WHILE LOOP TERMINATED! ===></p>";
         }
     ?>
 
@@ -56,28 +58,41 @@
 
         echo "<form method='post'>
         Type the loop quantity below:(eg. 10)<br>
-        <input type='number' id='loopQty' name='loopQty'><br><br>
+        <input type='number' id='loopQtyDW' name='loopQtyDW'><br><br>
 
-        <input type='submit' id='submitW' name='submitW'>
+        Type the loop ceiling below:(eg. 20)<br>
+        <input type='number' id='loopCeilingDW' name='loopCeilingDW'><br>
+
+        <input type='submit' id='submitDW' name='submitDW'>
         </form>";
 
-        $loopQty = 10;
+        //$loopQty = 10;
+        
+        $loopQtyDW = 0;
+        $loopCeilingDW = 0;
+        
+        if(isset($_REQUEST['submitDW'])){
+        $loopQtyDW = $_REQUEST['loopQtyDW'];
+        $loopCeilingDW = $_REQUEST['loopCeilingDW'];
 
-        if(isset($_REQUEST['submitW'])){
-        $loopQty = $_REQUEST['loopQty'];
-
-        $loopQ = $loopQty;
-        $loopW = 0;
-
-
+        $loopQDW = $loopQtyDW;
+        $loopDW = $loopCeilingDW;
 
         //Post Condition Loop
+        /*
         $grade = 0;
         do {
             echo "<p>I am Do-While Loop</p>";
             $grade++;
-        } while ($grade <= 10);
+         while ($grade <= 10);
         echo "<p>Exit Do-While Loop!</p>";
+        */
+
+        do {
+            echo "<p>I am Do-While Loop</p>";
+            $loopQDW++;
+        } while ($loopQDW <= $loopCeilingDW);
+        echo "<p><=== DO-WHILE LOOP TERMINATED! ===></p>";
     }
     ?>
 <?php include "footer.php";?>

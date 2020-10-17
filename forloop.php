@@ -15,7 +15,7 @@
         Type the loop quantity below:(eg. 10)<br>
         <input type='number' id='loopQty' name='loopQty'><br><br>
         Type the loop text below:(eg. Hello World)<br>
-        <input type='text' id='loopText' name='loopText'><br><br>
+        <input type='text' id='loopText' name='loopText'><br>
 
         <input type='submit' id='submit' name='submit'>
         </form>";
