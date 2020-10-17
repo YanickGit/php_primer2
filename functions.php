@@ -42,10 +42,10 @@
     $num = 500;
     addFunction(10, 40);
     addFunction(10, $num);
-    addFunction('11', "10");
+    addFunction("11", "10");
 
     changeNum($num);
-    echo $num.'<br/>';
+    echo $num."<br/>";
 ?>
 
 <?php include "includes/footer.php";?>
