@@ -11,7 +11,7 @@
     <body>
 
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-    <img src="images/logo.png" alt="php logo" width="60" height="40">
+    <img src="images/logo.png" alt="php logo" width="80" height="40">
     <ul class="navbar-nav">
     <li class="nav-item">
       <a class="nav-link" href="index.php" >Index</a>
