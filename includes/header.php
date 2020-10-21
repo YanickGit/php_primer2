@@ -43,7 +43,7 @@
   </ul>
 </nav>
 
-<div class="container-fluid bg-dark text-white" style="margin-top:57px">
+<div class="container-fluid bg-dark text-white" style="margin-top:80px">
     <h1>Welcome to PHP Primer</h1>
     <hr style="height:1px;border-width:0;color:white;background-color:white">
     ';  
